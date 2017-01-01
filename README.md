@@ -1,22 +1,8 @@
-##Thingiverse
-A PHP wrapper for the Thingiverse API.
+##Thingiverse Stats and Data
+Raw JSON formatted data about thingiverse.com Things
 
 ###Motivation
-Making awesome things easier!
-
-##Use
-###Configuration
-1. Login at http://www.thingiverse.com/developers
-2. Click on your app, then 'Edit this app'
-3. In the thingiverse.php `__construct()` method, enter your Client ID and Client Secret (from the Thingiverse.com app page) into `$this->client_id` and `$this->client_secret`
-4. Optionally enter your URL for Thingiverse to forward the user (and OAuth code) to in `$this->redirect_uri`
-
-###Implementation
-1. Import thingiverse.php `require_once 'thingiverse.php';`
-2. Create a new instance `$thingiverse = new Thingiverse();`. Optionally enter an access token (if you have it) as a parameter (skip the next two steps if you do this)
-3. Use `$thingiverse->makeLoginURL();` to create a link to authorize a user account for your app
-4. Once you receive a code from Thingiverse, `$thingiverse->oAuth('code here');`
-5. You're all set! 
+Provide raw data for scientist interested about 3D printing
 
 ##License
 The MIT License (MIT)
